@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+.center{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(31, 31, 31);
+}
+h1 {
+    color:white;
+    text-shadow:4px 4px black;
+    font-family:'Montserrat', sans-serif;
+    font-size: 60px
+}
+h2 {
+    color:white;
+    text-shadow:2px 2px black;
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height:3em;
+}
+header > p{
+    font-size: 60px;
+    text-shadow:4px 4px black;
+    animation-name:movinghead;
+    animation-iteration-count:infinite;
+    animation-duration: 2s;
+    transition-timing-function:ease-in;
+}
+@keyframes movinghead{
+    0% {transform:translateY(0px);}
+    10% {transform:translateY(2px);}
+    20% {transform:translateY(4px);}
+    30% {transform:translateY(6px);}
+    40% {transform:translateY(8px);}
+    50% {transform:translateY(10px);}
+    60% {transform:translateY(8px);}
+    70% {transform:translateY(6px);}
+    80% {transform:translateY(4px);}
+    90% {transform:translateY(2px);}
+  }
+div {
+    font-size: 5em;
+}
+.icon-bar{
+	width:100%;
+	overflow:auto;
+}
+.icon-bar a{
+	text-align:center;
+	width:20%;
+	float:left;
+	padding:12px 0px;
+	color:white;
+	font-size:36px;
+	transition: all 0.3s ease;
+}
+.icon-bar a:hover{
+	background-color:rgb(158, 0, 0);
+}
+img{
+	width:100%;
+    height:auto;
+	border-radius:30px;
+	box-shadow:2px 2px rgb(31, 31, 31);
+
+}	
+a:link, a:visited, a:hover, a:active{
+		color:rgb(173, 173, 173);
+		text-decoration:none;
+}	
+/* css sytling for menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+li {
+    float:left;
+}
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:link{
+    color:white;
+}
+li a:hover {
+    background-color: rgb(31, 31, 31);
+	color:white;
+	border-radius:10px;
+}
+li a:active {
+    background-color: rgb(199, 0, 0);
+    border-radius:10px;
+}
+	
+/* Style the css menu*/
+nav {
+    background-color: rgb(31, 31, 31);
+    font-size:xx-large;
+    font-weight:bolder;
+}
+/* style the header */	
+header {
+    background-color: #aa000b;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}	
+/* Style the footer */
+footer {
+    background-color:rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+	font-size:.8em;
+    padding: 10px;
+    text-align: right;
+}
+
+/* styling for sectionisions within the article element */	
+ article > section {
+	text-align:center;
+	border: 10px rgb(31, 31, 31) solid;
+	font-size:1em;
+	background-color:#aa000b;
+	overflow:auto;
+    color:white;
+    height:1500px;
+    border-radius:30px;
+}
+aside{
+	margin:.5%;
+	box-shadow:1px 1px #333;
+	border-radius:10px;
+	padding:10px;	
+}	
+/* will contain the grid view columns */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}	
+/* mobile*/
+[class*="col-"] {
+  float: left;
+  width:100%;	
+}	
+/* tablet and desktop */	
+@media only screen and (min-width: 600px) {	
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+@keyframes head {
+    from {left: -30%}
+    to {left: 20%}
+}
